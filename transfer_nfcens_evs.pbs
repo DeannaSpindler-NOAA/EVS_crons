@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#PBS -N xfer_nfcens_evs
+#PBS -q dev_transfer 
+#PBS -A VERF-DEV
+#PBS -l walltime=01:00:00
+#PBS -o /path/to/cron/logs/transfer_nfcens_EVS.log
+#PBS -j oe
+
+/path/to/cron/scripts/transfer_evs.sh 'nfcens' 'nfcens'
